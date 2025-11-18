@@ -24,3 +24,32 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translate(-40px, 40px); /* left + bottom */
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.animate-fadeSlide {
+  animation: fadeSlide 1s ease-out forwards;
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-rotate360 {
+  animation: rotate360 10s linear infinite;
+}
+
