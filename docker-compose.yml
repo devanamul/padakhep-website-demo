@@ -2,8 +2,10 @@ version: "3.9"
 services:
   nextjs:
     build: .
+    volumes:
+      - .:/app          # mount current folder for live reload
+      - /app/node_modules  # prevent overwriting node_modules
     ports:
       - "3000:3000"
     environment:
-      NODE_ENV: production
-    restart: unless-stopped
+      NODE_ENV: development
