@@ -26,7 +26,7 @@ export default function Hero() {
                 <p className="text-white text-3xl w-2/3 py-6">
                   Explore 30 facts about the climate crisis that explain the urgency of action and the promise of solutions.
                 </p>
-                <button className="bg-[#d12800] w-40 h-10 text-white text-xl">
+                <button className="bg-[#d12800] w-40 h-10 text-white text-xl rounded">
                   Read More {'>'}
                 </button>
               </span>
